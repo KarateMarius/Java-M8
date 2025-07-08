@@ -11,7 +11,7 @@ public class Buch {
     System.out.println("Der Titel lautet: " + titel);
     System.out.println("Es kostet: " + preis + "€");
     System.out.println("Es ist die " + auflage + ". Auflage");
-    System.out.println("Der Preis mit MwSt ist: " + berechneMwSt() + "€");
+    System.out.println("Der Preis mit MwSt ist: " + berechneMwSt(gibPreis()) + "€");
     }
 
     public String gibAutor(){
