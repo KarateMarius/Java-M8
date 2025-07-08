@@ -11,7 +11,7 @@ public class Buch {
     System.out.println("Der Titel lautet: " + titel);
     System.out.println("Es kostet: " + preis + "€");
     System.out.println("Es ist die " + auflage + ". Auflage");
-
+    System.out.println("Der Preis mit MwSt ist: " + berechneMwSt() + "€");
     }
 
     public String gibAutor(){
@@ -74,10 +74,6 @@ class Buchhaendler {
         Buch buch1 = new Buch();
 
         buch1.gibInfo();
-        System.out.println(buch1.gibAutor());
-        System.out.println(buch1.gibTitel());
-        System.out.println(buch1.gibPreis());
-        System.out.println(buch1.gibAuflage());
         System.out.println(buch1.berechneMwSt(buch1.gibPreis()));
 
         buch1.setAutor("Marius");
@@ -86,7 +82,7 @@ class Buchhaendler {
         buch1.setAuflage(3);
 
         buch1.gibInfo();
-        System.out.println("Der Preis mit MwSt ist: " + buch1.berechneMwSt(buch1.gibPreis()) + "€");
+
 
     }
 
