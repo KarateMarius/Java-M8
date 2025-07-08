@@ -73,9 +73,6 @@ class Buchhaendler {
 
         Buch buch1 = new Buch();
 
-        buch1.gibInfo();
-        System.out.println(buch1.berechneMwSt(buch1.gibPreis()));
-
         buch1.setAutor("Marius");
         buch1.setTitel("Was geht hier ab");
         buch1.setPreis(25);
