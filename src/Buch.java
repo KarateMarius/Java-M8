@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Buch {
 
     private String autor;
@@ -62,6 +64,7 @@ public class Buch {
 
     public void setPreis(double preis){
 
+        if (preis < 0) preis = 0;
         this.preis = preis;
     }
 }
@@ -71,12 +74,17 @@ class Buchhaendler {
 
     public static void main (String[] args){
 
-        Buch buch1 = new Buch();
+        Scanner scanner = new Scanner(System.in);
 
-        buch1.setAutor("Marius");
-        buch1.setTitel("Was geht hier ab");
-        buch1.setPreis(25);
-        buch1.setAuflage(3);
+        Buch buch1 = new Buch();
+        System.out.print("Bitte den Namen des Autors eingeben: ");
+        buch1.setAutor(scanner.nextLine());
+        System.out.print("Bitte Titel des Buches eingeben: ");
+        buch1.setTitel(scanner.nextLine());
+        System.out.print("Bitte den Preis eingeben: ");
+        buch1.setPreis(scanner.nextDouble());
+        System.out.print("Bitte die Auflage eingeben: ");
+        buch1.setAuflage(scanner.nextInt());
 
         buch1.gibInfo();
 
