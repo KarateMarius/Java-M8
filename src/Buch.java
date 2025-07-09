@@ -13,7 +13,7 @@ public class Buch {
     System.out.println("Der Titel lautet: " + titel);
     System.out.println("Es kostet: " + preis + "€");
     System.out.println("Es ist die " + auflage + ". Auflage");
-    System.out.println("Der Preis mit MwSt ist: " + berechneMwSt(gibPreis()) + "€");
+    System.out.println("Die enthaltene MwSt beträgt: " + berechneMwSt(gibPreis()) + "€");
     }
 
     public String gibAutor(){
@@ -39,10 +39,9 @@ public class Buch {
 
     public double berechneMwSt(double buchpreis){
 
-        double mwst = 1.07;
+        double mwst = 0.07;
         buchpreis = buchpreis * mwst;
-
-        return buchpreis;
+        return Math.round(buchpreis * 100.0) / 100.0;
     }
 
     public void setAuflage(int auflage){
