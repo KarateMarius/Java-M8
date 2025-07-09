@@ -6,7 +6,11 @@ public class Buch {
     private String titel;
     private double preis;
     private int auflage;
+
+    // nicht Folien relevant
     private Scanner sc = new Scanner(System.in);
+
+
     public void gibInfo(){
 
     System.out.println("Der Autor heißt: " + autor);
@@ -19,7 +23,6 @@ public class Buch {
     public String gibAutor(){
 
         return autor;
-
     }
 
     public String gibTitel(){
@@ -67,6 +70,7 @@ public class Buch {
         this.preis = preis;
     }
 
+    // nicht Folien relevant
     public void datenEingabe(){
 
         System.out.print("Bitte den Namen des Autors eingeben: ");
