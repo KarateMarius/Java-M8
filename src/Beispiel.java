@@ -7,9 +7,10 @@ public class Beispiel {
     public static Scanner sc = new Scanner(System.in);
 
 
-    public void main(){
+    public static void main(String[] args) {
 
-    geburtstagWuensch();
+        Beispiel b = new Beispiel();
+        b.geburtstagWuensch();
 
     }
 
