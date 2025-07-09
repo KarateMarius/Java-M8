@@ -9,14 +9,14 @@ public class Beispiel {
 
     public void main(){
 
-    Beispiel b = new Beispiel();
+    geburtstagWuensch();
 
     }
 
     public void geburtstagWuensch(){
 
     Beispiel b = new Beispiel();
-
+    Scanner sc = new Scanner(System.in);
     System.out.print("Wer hat Geburtstag?: ");
     String gbName = sc.nextLine();
     System.out.print("Wie alt wird das Geburtstagskind?: ");
