@@ -9,7 +9,7 @@ public class Beispiel {
 
     public void main(){
 
-    geburtstagWuensch();
+    rechner();
 
     }
 
