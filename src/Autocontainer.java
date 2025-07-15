@@ -29,9 +29,9 @@ public class Autocontainer{
     public void berechnePreisMax(){
 
         double maxPreis = 0;
-        for(int i > maxPreis){
+        for(){
 
-                Auto.
+
             }
         }
 
