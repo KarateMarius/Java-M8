@@ -104,6 +104,7 @@ class Buchhaendler {
         Scanner scanner = new Scanner(System.in);
 
         Buch buch1 = new Buch("Marius", "VIT", 23, 23);
+
         buch1.gibInfo();
 
 

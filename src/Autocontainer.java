@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Autocontainer{
+public class Autocontainer {
 
     private String zielOrt;
     private int zaehlerAutos;
@@ -8,36 +8,24 @@ public class Autocontainer{
     private List<Object> Auto;
 
 
-    public void addAuto(Auto auto){
+    public void addAuto(Auto auto) {
 
 
-
-        if(zaehlerAutos < anzahlAutos){
+        if (zaehlerAutos < anzahlAutos) {
 
             Auto.add(auto);
             zaehlerAutos++;
         }
     }
 
-    public void printAutoliste(Auto auto, Autocontainer container){
+    public void printAutoliste(Auto auto, Autocontainer container) {
 
         System.out.println(container.zielOrt);
 
         System.out.println(auto.toString());
     }
 
-    public void berechnePreisMax(){
-
-        double maxPreis = 0;
-        for(){
-
-
-            }
-        }
-
-    }
 }
-
 
 class Auto {
 
@@ -77,8 +65,7 @@ class Auto {
         this.preis = preis;
     }
 
-    public static void main(){
-
+    public static void main(String[] args){
 
     }
 }

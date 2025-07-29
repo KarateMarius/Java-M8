@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Advent of Code/Advent of Code.iml" filepath="$PROJECT_DIR$/Advent of Code/Advent of Code.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java-M8.iml" filepath="$PROJECT_DIR$/Java-M8.iml" />
     </modules>
   </component>
