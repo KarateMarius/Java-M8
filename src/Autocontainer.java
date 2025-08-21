@@ -46,10 +46,9 @@ class Auto {
 
     }
 
-    public double berechnePreisNeu(){
+    public double berechnePreisNeu(double prozentSatz){
 
-        double prozentSatz = 0.24;
-        preis = preis *  prozentSatz;
+        preis = preis *  prozentSatz/100;
 
         return preis;
 
@@ -65,8 +64,22 @@ class Auto {
         this.preis = preis;
     }
 
-    public static void main(String[] args){
+}
+class Autoverladung {
+
+    public static void Main() {
+
+        Auto auto1 = new Auto("A2", "Audi", "champagner", true, 36999.99);
+        Auto auto2 = new Auto("Golf", "VW", "schwarz", true, 28800.00);
+        Auto auto3 = new Auto("Escape", "Renault", "crimson", false, 38800.00);
+        Auto auto4 = new Auto("A8", "Audi", "nachtblau", false, 84160.00);
+
+        auto1.gibInfos();
+        auto1.berechnePreisNeu(0.14);
+        auto1.gibInfos();
 
     }
 }
+
+
 
