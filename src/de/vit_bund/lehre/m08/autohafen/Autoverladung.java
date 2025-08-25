@@ -9,10 +9,12 @@ class Autoverladung {
         Auto auto3 = new Auto("Escape", "Renault", "crimson", false, 38800.00);
         Auto auto4 = new Auto("A8", "Audi", "nachtblau", false, 84160.00);
 
-        Autocontainer ac = new Autocontainer("Sydney", 3);
+        Autocontainer ac = new Autocontainer("Sydney", 4);
         ac.addAuto(auto1);
         ac.addAuto(auto2);
         ac.addAuto(auto3);
+        ac.addAuto(auto4);
+
         ac.printAutoliste();
 
         ac.kategorisiereContainer();

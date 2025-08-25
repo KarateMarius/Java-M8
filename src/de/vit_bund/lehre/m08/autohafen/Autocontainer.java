@@ -14,7 +14,7 @@ public class Autocontainer {
         if (zaehlerAutos < anzahlAutos) {
 
             inhalt[zaehlerAutos] = auto;
-            zaehlerAutos++;
+            zaehlerAutos += 1;
         }else {
 
             System.out.println("Der Container ist voll.");
