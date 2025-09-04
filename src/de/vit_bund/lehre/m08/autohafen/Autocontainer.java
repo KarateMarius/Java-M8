@@ -23,12 +23,15 @@ public class Autocontainer {
 
     public void printAutoliste() {
 
+        int i = 0;
+
         System.out.println(zielOrt);
 
-        for(int i = 0; i < anzahlAutos; i++){
+        while(i < anzahlAutos){
             if(inhalt[i] != null){
             inhalt[i].gibInfos();
             System.out.println();
+            i++;
             }
         }
     }
