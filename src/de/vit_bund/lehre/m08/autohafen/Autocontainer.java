@@ -65,7 +65,7 @@ public class Autocontainer {
 
         double zwPreis;
         double maxPreis = 0;
-        int i = 0
+        int i = 0;
         while( i < anzahlAutos) {
             if (inhalt[i] != null) {
                 zwPreis = inhalt[i].gibPreis();
