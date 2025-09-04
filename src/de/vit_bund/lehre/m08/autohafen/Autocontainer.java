@@ -65,13 +65,14 @@ public class Autocontainer {
 
         double zwPreis;
         double maxPreis = 0;
-
-        for(int i = 0; i < anzahlAutos; i++) {
+        int i = 0
+        while( i < anzahlAutos) {
             if (inhalt[i] != null) {
                 zwPreis = inhalt[i].gibPreis();
 
                 if(zwPreis > maxPreis){maxPreis = zwPreis;}
             }
+            i++;
         }
 
         System.out.println(maxPreis + "€ ist der höchste Preis");
