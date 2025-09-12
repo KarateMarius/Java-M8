@@ -1,3 +1,5 @@
+package AD;
+
 class Fahrzeug {
 
     private String fahrzeugTyp;
@@ -7,7 +9,7 @@ class Fahrzeug {
 
     public void getInfos(){
 
-        System.out.println("Fahrzeug Typ:" + fahrzeugTyp);
+        System.out.println("AD.Fahrzeug Typ:" + fahrzeugTyp);
         System.out.println("Alter:" + alter);
         System.out.println("Besitzer:" + besitzer);
         System.out.println("Preis:" + preis);

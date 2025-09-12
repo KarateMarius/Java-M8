@@ -1,3 +1,5 @@
+package AD;
+
 import java.util.Scanner;
 
 public class Buch {

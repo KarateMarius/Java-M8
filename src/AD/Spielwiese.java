@@ -1,3 +1,5 @@
+package AD;
+
 public class Spielwiese{
 
     public static void main(String[] args) {
