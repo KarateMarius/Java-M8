@@ -1,7 +1,14 @@
 package Ticketverwaltung.model;
 
 public class Veranstaltung {
-
+    /**
+     * 
+     * Initialisieren + Getter und Setter
+     * @name
+     * @beschreibung
+     * @tickets
+     * @kuerzel
+     */
     private String name;
     private String beschreibung;
     private Ticket[] tickets;
@@ -26,7 +33,13 @@ public class Veranstaltung {
     public void setBeschreibung(String beschreibung) {
         this.beschreibung = beschreibung;
     }
-    
+
+    /**
+     * 
+     * verkauft eine Menge an Tickets die eingegeben werden
+     * @param anzTicket
+     * @return
+     */
     public boolean verkaufeTickets(int anzTicket){
         
         if(verfTesten(tickets) >= anzTicket) {

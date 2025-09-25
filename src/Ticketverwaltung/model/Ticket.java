@@ -1,7 +1,11 @@
 package Ticketverwaltung.model;
 
 public class Ticket {
-
+    /**
+     * @verkauft
+     * @nummer
+     *Getter und Setter wie in der Aufgabe gefordert
+     */
     private boolean verkauft = false;
     private int nummer;
     
@@ -23,6 +27,11 @@ public class Ticket {
         this.verkauft = verkauft;
     }
 
+    /**
+     * 
+     * gibt den einzel Ticketpreis zurück
+     * @return
+     */
     public double getPreis(){
         
         return 5.00;
