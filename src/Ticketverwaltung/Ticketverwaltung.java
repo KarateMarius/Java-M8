@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Ticketverwaltung {
 
-    static Veranstaltung[] veranstaltungen;
+    static private Veranstaltung[] veranstaltungen = new Veranstaltung[100];
     static Scanner sc = new Scanner(System.in);
     
     public static void main(String[] args) {
@@ -71,7 +71,7 @@ public class Ticketverwaltung {
         String beschreibung = sc.nextLine();
         int anzahl = sc.nextInt();
         
-        veranstaltungen[0] = new Veranstaltung(kuerzel, name, beschreibung, anzahl);
+        Veranstaltung veranstaltungen = new Veranstaltung(kuerzel, name, beschreibung, anzahl);
         
         
     }
@@ -93,8 +93,10 @@ public class Ticketverwaltung {
                 veranstaltungErstellen();
             case "liste":
                 for(int i = 0; i < veranstaltungen.length; i++){
-                    
-                    System.out.println(veranstaltungen[i].getKuerzel()+ " " + veranstaltungen[i].getKuerzel());
+                    if (!(veranstaltungen[i] == null)) {
+
+                        System.out.println(veranstaltungen[i].getKuerzel()+ " " + veranstaltungen[i].getKuerzel());
+                    }
                 }
             case "kaufen":
                 ticketVerkaufen();
@@ -112,7 +114,7 @@ public class Ticketverwaltung {
         
         for(int i = 0; i < veranstaltungen.length; i++){
             
-            if(veranstaltungen[i].getKuerzel().equals("einKurz")){
+            if(veranstaltungen[i].getKuerzel().equals(einKurz)){
                 
                 veranstaltungen[i].verkaufeTickets(einAnzahl);
                 break;
