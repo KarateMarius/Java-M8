@@ -9,7 +9,7 @@ public class Literaturverwaltung {
     public static void main(String[] args) {
         
         Buch b = new Buch("Dresbach der Hofnarr", 25, new Autor(1, "Louis", "Dresbach"), new Kapitel("Der Anfang", 1));
-        Autor a = new Autor(2, "Marius", "Brofauf");
+        Autor a = new Autor(2, "Marius", "Brodauf");
         
         
         
