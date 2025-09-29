@@ -56,10 +56,18 @@ public class Veranstaltung {
                 }
                 ph++;
 
-            }return true;
+                
+            }
+            if(verfTesten(tickets) == 0){
+                
+                return false;
+            
+            }else return false;
 
-        }else 
+        }else {
             return false;
+        }
+        
     }
 
     public static int verfTesten(Ticket[] ticket) {

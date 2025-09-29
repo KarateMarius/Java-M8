@@ -71,7 +71,7 @@ public class Ticketverwaltung {
         String beschreibung = sc.nextLine();
         int anzahl = sc.nextInt();
         
-        Veranstaltung veranstaltungen = new Veranstaltung(kuerzel, name, beschreibung, anzahl);
+        veranstaltungen = new Veranstaltung[]{new Veranstaltung(kuerzel, name, beschreibung, anzahl)};
         
         
     }
