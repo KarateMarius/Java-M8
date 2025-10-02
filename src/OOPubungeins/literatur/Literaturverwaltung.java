@@ -2,7 +2,6 @@ package OOPubungeins.literatur;
 
 import OOPubungeins.akteure.Autor;
 import OOPubungeins.literatur.model.Buch;
-import OOPubungeins.literatur.model.Kapitel;
 
 public class Literaturverwaltung {
 
