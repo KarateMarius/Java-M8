@@ -49,7 +49,7 @@ public class Buch {
         
     }
     
-    public Buch(String titel, int ausgabe, Autor autor){
+    public Buch(String titel, int ausgabe){
     
         this.titel = titel;
         this.ausgabe = ausgabe;
@@ -57,8 +57,6 @@ public class Buch {
         kapitelschleife();
         
         autorschleife();
-
-        this.autor[0] = autor;
         
         
                 
