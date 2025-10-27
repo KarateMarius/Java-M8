@@ -50,7 +50,7 @@ public class Liste {
     }
 
     public Object get(int pos) {
-        return speicher[pos];
+        if(posInListe(pos)){ return this.speicher[pos];}else{return false;}
     }
     
     
