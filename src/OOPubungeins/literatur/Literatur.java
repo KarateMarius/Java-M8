@@ -2,9 +2,19 @@ package OOPubungeins.literatur;
 
 import OOPubungeins.akteure.Autor;
 
-public class Literatur {
-    
+public abstract class Literatur {
+
     private String titel;
+    
+    public String getTitel() {
+        return titel;
+    }
+
+    public void setTitel(String titel) {
+        this.titel = titel;
+    }
+
+    
     
     public String getinfo(){
         
@@ -17,9 +27,19 @@ public class Literatur {
         return null;
     }
     
-    public boolean istAutorInvolviert(Autor autor){
+    public boolean istAutorInvolviert(Autor autor, Autor[] autoren){
         
-        
-        
-    }
+        for(int i = 0; i < autoren.length; i++){
+            
+            if(autoren[i].equals(autor)){
+                
+                return true;
+            }else {
+                
+                return false;
+            }
+            
+        }
+        return false;
+    }  
 }

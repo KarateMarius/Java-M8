@@ -7,16 +7,15 @@ import java.util.Scanner;
 import static OOPubungeins.literatur.Literaturverwaltung.autorschleife;
 import static OOPubungeins.literatur.Literaturverwaltung.kapitelschleife;
 
-public class Buch {
+public class Buch extends Monographie{
     
     private String titel;
     private int ausgabe;
     
     private Scanner sc = new Scanner(System.in);
-    
+
     private Autor[] autor;
     private Kapitel[] kapitel;
-    
     
     
     public Buch(String titel, int ausgabe){
@@ -24,9 +23,9 @@ public class Buch {
         this.titel = titel;
         this.ausgabe = ausgabe;
         
-        kapitelschleife(kapitel);
+        kapitel = kapitelschleife();
         
-        autorschleife(autor);
+        autor = autorschleife();
         
         
                 
