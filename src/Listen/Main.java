@@ -16,7 +16,9 @@ public class Main {
         System.out.println(liste.get(1));
         System.out.println(liste.get(2));
         
-        System.out.println(liste.entfernen(2));
+        System.out.println(liste.indexEntfernen(2));
+        
+        System.out.println(liste.elementEntfernen(3));
         
         System.out.println();
         
