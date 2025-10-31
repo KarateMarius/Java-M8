@@ -12,9 +12,11 @@ public class Main {
         
         System.out.println(liste.leange());
         
-        System.out.println(liste.get(0));
-        System.out.println(liste.get(1));
-        System.out.println(liste.get(2));
+        System.out.println(liste.getElement(0));
+        System.out.println(liste.getElement(1));
+        System.out.println(liste.getElement(2));
+        
+        System.out.println(liste.getIndex("Help"));
         
         System.out.println(liste.indexEntfernen(2));
         
@@ -23,7 +25,7 @@ public class Main {
         System.out.println();
         
         for(int i = 0; i < liste.leange(); i++){
-            System.out.println(liste.get(i));
+            System.out.println(liste.getElement(i));
             
         }
         

@@ -70,8 +70,19 @@ public class Liste {
         return this.speicher.length;
     }
 
-    public Object get(int pos) {
+    public Object getElement(int pos) {
         if(posInListe(pos)){ return this.speicher[pos];}else{return false;}
+    }
+    public int getIndex(Object e) {
+        if (elementInListe(e)) {
+            for (int i = 0; i < speicher.length; i++) {
+                if (speicher[i].equals(e)) {
+
+                    return i;
+                }
+            }
+        }
+        return 0;
     }
     
     private boolean posInListe(int pos){
@@ -82,7 +93,7 @@ public class Liste {
     private boolean elementInListe(Object e){
 
         for (Object o : this.speicher) {
-            return o.equals(e);
+            if(o.equals(e)){return true;}
         }
         return false;
     }
