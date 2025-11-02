@@ -73,6 +73,7 @@ public class Liste {
     public Object getElement(int pos) {
         if(posInListe(pos)){ return this.speicher[pos];}else{return false;}
     }
+    
     public int getIndex(Object e) {
         if (elementInListe(e)) {
             for (int i = 0; i < speicher.length; i++) {
