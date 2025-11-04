@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Liste {
     private Object[] speicher;
 
-
     public void hinzufuegen(Object e)   {
 
         if (!(this.speicher == null)) {
