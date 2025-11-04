@@ -54,8 +54,6 @@ public class AufgabenMain {
             schlange.add(i);
             
         }
-        Queue<Integer> queue = new LinkedList<>();
-        queue = schlange;
         
         int summe = 0;
         
@@ -68,14 +66,28 @@ public class AufgabenMain {
         //Aufgabe 4
         
         System.out.println();
-        
-        System.out.println(queuerechner(queue));
+
+        Queue<Integer> queue = new LinkedList<>();
+
+        queue.addAll(zahlen);
+
+
+        System.out.println(queueAddieren(queue));
         
     }
 
-    public static int queuerechner(Queue<Integer> q) {
+    public static int queueAddieren(Queue<Integer> q) {
 
-       
+       if(q.isEmpty()){return 0;}
+
+       int i = q.poll();
+       int rest = queueAddieren(q);
+
+       q.add(i);
+
+       return i + rest;
+
+
         
         
         
