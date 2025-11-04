@@ -75,7 +75,7 @@ public class AufgabenMain {
         System.out.println(queueAddieren(queue));
         
     }
-
+    // Aufgabe 4
     public static int queueAddieren(Queue<Integer> q) {
 
        if(q.isEmpty()){return 0;}
