@@ -76,5 +76,10 @@ public class AufgabenMain {
     public static int queuerechner(Queue<Integer> q) {
 
        
+        
+        
+        
+        
+        
     }
 }
