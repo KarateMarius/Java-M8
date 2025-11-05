@@ -83,8 +83,6 @@ public class AufgabenMain {
        int i = q.poll();
        int rest = queueAddieren(q);
 
-       q.add(i);
-
        return i + rest;
 
 
