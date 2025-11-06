@@ -23,26 +23,28 @@ public class AufgabenMain {
         System.out.println(ges);
         
         // Aufgabe 2
-        List<Integer> neueZahlen = new ArrayList<>();
         //List<Integer> neueZahlen = new ArrayList<>(zahlen); geht auch!!!!!
+
+        List<Integer> neueZahlen = new ArrayList<>(zahlen);
         
-        neueZahlen.addAll(zahlen);
         
-        
-        Set<Integer> set = new HashSet<>(); 
-        
-        for(int i = 0; i < neueZahlen.size(); i++){
-            if(!((neueZahlen.get(i) % 2) == 0)){
-            set.add(neueZahlen.get(i));}
-            
+        Set<Integer> set = new HashSet<>();
+
+        for (int i : neueZahlen) {
+            if ((i % 2) == 1) {
+                set.add(i);
+            }
+
         }
         
         neueZahlen.removeAll(set);
-        
-        for(int i = 0; i < zahlen.size(); i++){
-            
-            if(neueZahlen.contains(zahlen.get(i))){System.out.println(zahlen.get(i));}  
-            
+
+        for (int i : zahlen) {
+
+            if (neueZahlen.contains(i)) {
+                System.out.println(i);
+            }
+
         }
 
 // Aufgabe 3
@@ -67,9 +69,7 @@ public class AufgabenMain {
         
         System.out.println();
 
-        Queue<Integer> queue = new LinkedList<>();
-
-        queue.addAll(zahlen);
+        Queue<Integer> queue = new LinkedList<>(zahlen);
 
 
         System.out.println(queueAddieren(queue));
