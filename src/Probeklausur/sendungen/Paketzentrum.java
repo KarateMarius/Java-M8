@@ -38,13 +38,12 @@ public class Paketzentrum {
         }
         ausgabe(set);
         
-        ausgabe(paket);
-        ausgabe(stueckgut);
     }
     
     public static void ausgabe(Set<Verfolgbar> items){
         for(Verfolgbar j : items){
             System.out.println(j.getPosition().adresseAusgeben());
+            ausgabe(j);
         }
         
     }
