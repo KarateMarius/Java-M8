@@ -45,7 +45,6 @@ public class Paketzentrum {
     public static void ausgabe(Set<Verfolgbar> items){
         for(Verfolgbar j : items){
             System.out.println(j.getPosition().adresseAusgeben());
-            j.
         }
         
     }
