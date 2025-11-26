@@ -3,7 +3,6 @@
     <output-path>$PROJECT_DIR$/out/artifacts/Java_M8_jar</output-path>
     <root id="archive" name="Java-M8.jar">
       <element id="module-output" name="Java-M8" />
-      <element id="library" level="project" name="Eingabe" />
     </root>
   </artifact>
 </component>

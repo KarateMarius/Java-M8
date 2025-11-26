@@ -12,7 +12,7 @@ public class Main {
         }
         
         int[] arr = {1,2,3,4};
-        arr = plus_1(arr);
+        plus_1(arr);
 
         for (int j : arr) {
             System.out.println(j);
@@ -21,8 +21,7 @@ public class Main {
         
     }
     
-    public static int[] plus_1(int[] arr){
+    public static void plus_1(int[] arr){
         arr[arr.length - 1] = arr[arr.length - 1] + 1;
-        return arr;
     }
 }

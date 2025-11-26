@@ -1,4 +1,4 @@
-package Errors;
+package Test;
 
 import org.junit.jupiter.api.Test;
 
@@ -16,9 +16,12 @@ class KontoTest {
         assertEquals(100.00, testKonto.getKontostand());
         //assertEquals(-1000.00, testKonto.abbuchen(1100.00));
         testKonto.verzinse(0.01, 1);
-        assertEquals(101.00, testKonto.getKontostand());
+        assertEquals(101.00, testKonto.getKontostand());        
         
-        
+    }
+    
+    static void Testinit(){
+        Konto art = new Konto("Test", 100);
     }
 
     }

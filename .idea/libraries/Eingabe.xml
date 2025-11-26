@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Eingabe">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/Ticketverwaltung/Eingabe.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

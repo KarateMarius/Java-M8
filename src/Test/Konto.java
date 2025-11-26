@@ -1,4 +1,4 @@
-package Errors;
+package Test;
 
 public class Konto {
     

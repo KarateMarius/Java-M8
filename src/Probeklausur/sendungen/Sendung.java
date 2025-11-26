@@ -2,7 +2,7 @@ package Probeklausur.sendungen;
 
 public class Sendung {
     
-    private Adresse adresse;
+    private final Adresse adresse;
     private Zustellfahrzeug fahrzeug;
     
     public Sendung(Adresse adresse){
